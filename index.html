@@ -1,0 +1,692 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="public/Logo_BlackBG.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Aray</title>
+  </head>
+  <body>
+    <div class="content">
+      <a
+        id="homebtn"
+        class="fixed hidden z-50 cursor-pointer p-3 text-7xl"
+        onclick="toSection('homeSection')"
+      >
+        <i class="homeBtn fa-solid fa-arrow-left-long"></i>
+      </a>
+
+      <section id="homeSection" class="background-home">
+        <img
+          class="absolute windows"
+          src="public/desktop/Web04_COMPUTER_WINDOWS w TITLES.png"
+          alt=""
+        />
+
+        <img
+          src="public/desktop/Connect_Window_Titles.png"
+          class="absolute connect-window"
+          alt=""
+        />
+
+        <img
+          src="public/desktop/Web04_COMPUTER_CHARACTERS FG.png"
+          class="absolute characters"
+          alt=""
+        />
+
+        <a onclick="toSection('aboutSection')"
+          ><button class="absolute window about z-10"></button
+        ></a>
+        <a href="https://aray-whitepaper.gitbook.io/aray/" target="_blank"
+          ><button class="absolute window litePaper z-10"></button
+        ></a>
+        <a onclick="toSection('utilitiesSection')"
+          ><button class="absolute window utilities z-10"></button
+        ></a>
+        <a onclick="toSection('teamSection')"
+          ><button class="absolute window team z-10"></button
+        ></a>
+        <a onclick="toSection('atoopiaSection')"
+          ><button class="absolute window atoopia z-10"></button
+        ></a>
+        <a onclick="toSection('ebookSection')"
+          ><button class="absolute window ebook z-10"></button
+        ></a>
+        <a onclick="toSection('faqSection')"
+          ><button class="absolute window faq z-10"></button
+        ></a>
+        <a onclick="toSection('connectSection')"
+          ><button class="absolute window connect z-10"></button
+        ></a>
+      </section>
+
+      <section
+        id="aboutSection"
+        class="hidden relative flex flex-col items-center bg-lightBlue"
+      >
+        <div
+          class="sectionContainer flex gap-20 p-60 z-30 text-center justify-center items-center"
+        >
+          <div class="relative flex flex-col gap-10 p-10 rounded-xl shadow-lg">
+            <h1 class="sectionHeader text-9xl mt-16">Our mission</h1>
+            <p class="paragraph">
+              Our main mission is to develop Atoopia. Atoopia is a web3 platform
+              designed to connect clients in search of external services with
+              skilled professionals willing to offer their expertise. We are
+              committed to meeting the growing demand of web3 freelancers
+              seeking well-paid work opportunities, as well as individuals and
+              professionals searching for independent talent for specific tasks.
+              Our goal is to simplify the freelancer hiring process and create a
+              collaborative environment for clients to find the best talent for
+              their project.
+            </p>
+          </div>
+          <div class="flex flex-col gap-10 p-10 rounded-xl shadow-lg">
+            <h1 class="sectionHeader text-9xl mt-16">Our vision</h1>
+            <p class="paragraph">
+              Over the past ten years, the freelancing market has experienced
+              explosive growth. Whether in the field of web2 or web3, more and
+              more people aspire to work independently, from their homes or
+              anywhere in the world. Despite this growing demand, the security
+              of contracts and transactions in the web3 domain lags behind this
+              evolution. To meet this need, we have created our platform, which
+              aims to be a reliable and secure solution for all independent
+              workers.
+            </p>
+          </div>
+        </div>
+        <img
+          class="absolute bush h-2/6 top-0 right-0 z-20"
+          src="public/sprites/Sakura_01.png"
+          alt=""
+        />
+        <img
+          class="absolute bush h-2/6 bottom-0 left-0 z-20"
+          src="public/sprites/Sakura_02.png"
+          alt=""
+        />
+
+        <div
+          class="background-wrap flex flex-col items-start absolute w-full min-h-full z-10"
+        >
+          <img
+            class="cloud h-1/6 x1"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x2"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x3"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x4"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x5"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section
+        id="teamSection"
+        class="hidden relative flex flex-col items-center bg-lightBlue"
+      >
+        <div
+          class="sectionContainer flex flex-col gap-20 p-10 z-30 text-center justify-center items-center overflow-auto"
+        >
+          <div
+            class="teamCard relative flex flex-col justify-center items-center gap-10 p-10 rounded-xl shadow-lg"
+          >
+            <h1 class="sectionHeaderSmall text-6xl mt-16">Peaky</h1>
+            <h1 class="sectionHeaderSmall text-4xl">Founder of ARAY</h1>
+            <div class="frame">
+              <img src="public/sprites/Trait_NoBG_01.png" class="h-60" alt="" />
+            </div>
+            <p class="paragraphSmall">
+              Hi everyone, some of you may already know me as Peaky. I am a
+              copywriter, advisor, ghostwriter, and marketing analyst. <br />
+              <br />
+
+              Currently, I am working on several projects such as DegenDAO,
+              LinkedDAO, and EmpireAlpha... <br />
+              <br />
+
+              I decided to found ARAY because my ambitions in the web3 space
+              keep increasing. I want to bring sustainable solutions to the
+              Solana ecosystem while sharing and teaching the knowledge I have
+              acquired throughout my journey.
+              <br />
+
+              Welcome to Atoopia!<br />
+            </p>
+            <p class="fadingText">Twitter:</p>
+            <a
+              class="text-blue-500"
+              href="https://twitter.com/PakzOled"
+              target="_blank"
+            >
+              https://twitter.com/PakzOled</a
+            >
+          </div>
+
+          <div
+            class="teamCard relative flex flex-col justify-center items-center gap-10 p-10 rounded-xl shadow-lg"
+          >
+            <h1 class="sectionHeaderSmall text-6xl mt-16">Zzodiaak</h1>
+            <h1 class="sectionHeaderSmall text-4xl">Co founder</h1>
+            <div class="frame">
+              <img src="public/sprites/Trait_NoBG_03.png" class="h-60" alt="" />
+            </div>
+            <p class="paragraphSmall">
+              Hello Atoopia! My name is Zzodiaak and I am a co-founder of
+              ARAY.<br />
+              <br />
+
+              I spent several years trading and investing in cryptocurrencies
+              and the traditional stock market before turning to NFTs, for which
+              I developed a consuming passion. <br />
+              <br />
+
+              As a hard worker, my goal is to make ARAY a success by utilizing
+              my experience in marketing and community management.
+            </p>
+            <p class="fadingText">Twitter:</p>
+            <a
+              class="text-blue-500"
+              href="https://twitter.com/Zzodiaak"
+              target="_blank"
+            >
+              https://twitter.com/Zzodiaak</a
+            >
+          </div>
+
+          <div
+            class="teamCard relative flex flex-col justify-center items-center gap-10 p-10 rounded-xl shadow-lg"
+          >
+            <h1 class="sectionHeaderSmall text-6xl mt-16">Peceto</h1>
+            <h1 class="sectionHeaderSmall text-4xl">Artist and designer</h1>
+            <div class="frame">
+              <img src="public/sprites/Trait_NoBG_02.png" class="h-60" alt="" />
+            </div>
+            <p class="paragraphSmall">
+              Hello everyone, I'm Peceto, an artist and designer.<br />
+              <br />
+
+              I have worked with several NFT projects such as Cynova, Weeping
+              Angels, KitsuneX and more recently with DegenDAO before joining
+              the ARAY team.<br />
+              <br />
+
+              I have 5+ years of experience in digital art and illustrations. Im
+              the founder of HANDL, a Creative Studio, where we make animations,
+              Pixel Art, 2D/3D art, UI/UX designs, branding, websites and games.
+              Been introduced into web3 space for about 2 years now and from
+              then, I fell in love with the space and its community.<br />
+              <br />
+
+              Consider myself a highly creative person with a passion for art,
+              and my mission here is to create an interesting and enriching
+              universe around Atoopia.
+            </p>
+
+            <p class="fadingText">Twitter:</p>
+            <a
+              class="text-blue-500"
+              href="https://twitter.com/peceto07"
+              target="_blank"
+            >
+              https://twitter.com/peceto07</a
+            >
+          </div>
+        </div>
+        <img
+          class="absolute bush h-10% top-0 right-0 z-20"
+          src="public/sprites/Sakura_01.png"
+          alt=""
+        />
+        <img
+          class="absolute bush h-10% bottom-0 left-0 z-20"
+          src="public/sprites/Sakura_02.png"
+          alt=""
+        />
+
+        <div
+          class="background-wrap flex flex-col items-start absolute w-full min-h-full z-10"
+        >
+          <img
+            class="cloud h-1/6 x1"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x2"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x3"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x4"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x5"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section
+        id="atoopiaSection"
+        class="hidden relative flex flex-col justify-center items-center bg-lightBlue"
+      >
+        <div
+          class="sectionContainer flex flex-col gap-20 p-10 z-30 h-screen text-center justify-center items-center overflow-auto"
+        >
+          <h1 class="sectionHeader text-9xl mt-16">Coming Soon</h1>
+        </div>
+        <div
+          class="background-wrap flex flex-col items-start absolute w-full min-h-full z-10"
+        >
+          <img
+            class="cloud h-1/6 x1"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x2"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x3"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x4"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x5"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+        </div>
+        <img
+          class="absolute bush h-2/6 top-0 right-0 z-20"
+          src="public/sprites/Sakura_01.png"
+          alt=""
+        />
+        <img
+          class="absolute bush h-2/6 bottom-0 left-0 z-20"
+          src="public/sprites/Sakura_02.png"
+          alt=""
+        />
+      </section>
+
+      <section
+        id="ebookSection"
+        class="hidden relative flex flex-col justify-center items-center bg-lightBlue"
+      >
+        <div
+          class="sectionContainer flex flex-col gap-20 p-10 z-30 h-screen text-center justify-center items-center overflow-auto"
+        >
+          <h1 class="sectionHeader text-9xl mt-16">Coming Soon</h1>
+        </div>
+        <div
+          class="background-wrap flex flex-col items-start absolute w-full min-h-full z-10"
+        >
+          <img
+            class="cloud h-1/6 x1"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x2"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x3"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x4"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x5"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+        </div>
+        <img
+          class="absolute bush h-2/6 top-0 right-0 z-20"
+          src="public/sprites/Sakura_01.png"
+          alt=""
+        />
+        <img
+          class="absolute bush h-2/6 bottom-0 left-0 z-20"
+          src="public/sprites/Sakura_02.png"
+          alt=""
+        />
+      </section>
+
+      <section
+        id="faqSection"
+        class="hidden relative flex flex-col justify-center items-center bg-lightBlue h-screen px-10"
+      >
+        <div
+          id="accordion-color"
+          data-accordion="collapse"
+          data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white"
+          class="z-50"
+        >
+          <h2 id="accordion-color-heading-1">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-color-body-1"
+              aria-expanded="true"
+              aria-controls="accordion-color-body-1"
+            >
+              <span>What is Flowbite?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 rotate-180 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-color-body-1"
+            class="hidden"
+            aria-labelledby="accordion-color-heading-1"
+          >
+            <div
+              class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Flowbite is an open-source library of interactive components
+                built on top of Tailwind CSS including buttons, dropdowns,
+                modals, navbars, and more.
+              </p>
+              <p class="text-gray-500 dark:text-gray-400">
+                Check out this guide to learn how to
+                <a
+                  href="/docs/getting-started/introduction/"
+                  class="text-blue-600 dark:text-blue-500 hover:underline"
+                  >get started</a
+                >
+                and start developing websites even faster with components on top
+                of Tailwind CSS.
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-color-heading-2">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-color-body-2"
+              aria-expanded="false"
+              aria-controls="accordion-color-body-2"
+            >
+              <span>Is there a Figma file available?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-color-body-2"
+            class="hidden"
+            aria-labelledby="accordion-color-heading-2"
+          >
+            <div
+              class="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Flowbite is first conceptualized and designed using the Figma
+                software so everything you see in the library has a design
+                equivalent in our Figma file.
+              </p>
+              <p class="text-gray-500 dark:text-gray-400">
+                Check out the
+                <a
+                  href="https://flowbite.com/figma/"
+                  class="text-blue-600 dark:text-blue-500 hover:underline"
+                  >Figma design system</a
+                >
+                based on the utility classes from Tailwind CSS and components
+                from Flowbite.
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-color-heading-3">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-color-body-3"
+              aria-expanded="false"
+              aria-controls="accordion-color-body-3"
+            >
+              <span
+                >What are the differences between Flowbite and Tailwind
+                UI?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-color-body-3"
+            class="hidden"
+            aria-labelledby="accordion-color-heading-3"
+          >
+            <div
+              class="p-5 border border-t-0 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                The main difference is that the core components from Flowbite
+                are open source under the MIT license, whereas Tailwind UI is a
+                paid product. Another difference is that Flowbite relies on
+                smaller and standalone components, whereas Tailwind UI offers
+                sections of pages.
+              </p>
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                However, we actually recommend using both Flowbite, Flowbite
+                Pro, and even Tailwind UI as there is no technical reason
+                stopping you from using the best of two worlds.
+              </p>
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Learn more about these technologies:
+              </p>
+              <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                <li>
+                  <a
+                    href="https://flowbite.com/pro/"
+                    class="text-blue-600 dark:text-blue-500 hover:underline"
+                    >Flowbite Pro</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://tailwindui.com/"
+                    rel="nofollow"
+                    class="text-blue-600 dark:text-blue-500 hover:underline"
+                    >Tailwind UI</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="background-wrap flex flex-col items-start absolute w-full min-h-full z-10"
+        >
+          <img
+            class="cloud h-1/6 x1"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x2"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x3"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x4"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x5"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+        </div>
+        <img
+          class="absolute bush h-2/6 top-0 right-0 z-20"
+          src="public/sprites/Sakura_01.png"
+          alt=""
+        />
+        <img
+          class="absolute bush h-2/6 bottom-0 left-0 z-20"
+          src="public/sprites/Sakura_02.png"
+          alt=""
+        />
+      </section>
+
+      <section
+        id="connectSection"
+        class="hidden relative flex flex-col justify-center items-center bg-lightBlue"
+      >
+        <div
+          class="sectionContainer flex flex-col gap-20 p-10 z-30 h-screen text-center justify-center items-center overflow-auto"
+        >
+          <h1 class="sectionHeader text-9xl mt-16">Coming Soon</h1>
+        </div>
+        <div
+          class="background-wrap flex flex-col items-start absolute w-full min-h-full z-10"
+        >
+          <img
+            class="cloud h-1/6 x1"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x2"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x3"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x4"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+          <img
+            class="cloud h-1/6 x5"
+            src="public/sprites/CloudOnly_01.png"
+            alt=""
+          />
+        </div>
+        <img
+          class="absolute bush h-2/6 top-0 right-0 z-20"
+          src="public/sprites/Sakura_01.png"
+          alt=""
+        />
+        <img
+          class="absolute bush h-2/6 bottom-0 left-0 z-20"
+          src="public/sprites/Sakura_02.png"
+          alt=""
+        />
+      </section>
+    </div>
+
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="scripts/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bff08d9f05.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

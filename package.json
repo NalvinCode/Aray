@@ -1,0 +1,15 @@
+{
+  "name": "aray",
+  "version": "1.0.0",
+  "description": "Aray Website",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwind -i ./src/input.css -o ./css/style.css",
+    "watch": "tailwind -i ./src/input.css -o ./css/style.css --watch"
+  },
+  "author": "Nalvin",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}

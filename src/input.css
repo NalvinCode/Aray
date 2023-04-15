@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 @font-face {
   font-family: badSignal;
-  src: url("../fonts/badSignal.ttf");
+  src: url('../fonts/badSignal.ttf');
 }
 
 html,
@@ -37,7 +37,7 @@ body::-webkit-scrollbar {
 }
 
 .background-home {
-  background-image: url("../public/desktop/Web04_COMPUTER_BG\ ONLY.png");
+  background-image: url('../public/desktop/Web04_COMPUTER_BG\ ONLY.png');
   background-size: cover;
   position: relative;
   aspect-ratio: 16/9;
@@ -61,8 +61,8 @@ body::-webkit-scrollbar {
 
 .connect-window {
   top: 10%;
-  right: 1%;
-  height: 25%;
+  right: 0%;
+  height: 50%;
   width: auto;
   animation: glow 0.75s infinite alternate;
 }
@@ -88,7 +88,7 @@ body::-webkit-scrollbar {
 }
 
 .paragraph {
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 1.7rem;
   font-weight: 600;
   text-shadow: 2px 2px 2px black;
@@ -96,7 +96,7 @@ body::-webkit-scrollbar {
 }
 
 .paragraphSmall {
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
   text-shadow: 2px 2px 2px black;
@@ -104,7 +104,7 @@ body::-webkit-scrollbar {
 }
 
 .fadingText {
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 2.5rem;
   text-shadow: 2px 2px 2px black;
   font-weight: 600;
@@ -113,8 +113,8 @@ body::-webkit-scrollbar {
 }
 
 a {
-  font-family: "Kanit", sans-serif;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -184,7 +184,7 @@ a {
   transform: rotate(-11deg) skewX(-9deg) skewY(-5deg);
 }
 
-.ebook {
+.stacking {
   top: 35%;
   right: 15.3%;
   width: 10.5%;
@@ -207,6 +207,22 @@ a {
   width: 11%;
   height: 13%;
   transform: rotate(10deg) skewX(13deg) skewY(10deg);
+}
+
+.store {
+  top: 32%;
+  right: 0.6%;
+  width: 11%;
+  height: 11%;
+  transform: rotate(9deg) skewX(13deg) skewY(10deg);
+}
+
+.market {
+  top: 44%;
+  right: 0.6%;
+  width: 11%;
+  height: 11%;
+  transform: rotate(8deg) skewX(12deg) skewY(8deg);
 }
 
 @keyframes fall {
@@ -436,7 +452,7 @@ a {
     overflow: auto;
   }
   .background-home {
-    background-image: url("../public/mobile/Web04_MOBILE_BG\ ONLY.png");
+    background-image: url('../public/mobile/Web04_MOBILE_BG\ ONLY.png');
     background-size: cover;
     position: relative;
     aspect-ratio: 9/16;
@@ -454,7 +470,7 @@ a {
   .connect-window {
     top: 28%;
     right: 0%;
-    height: 17%;
+    height: 30%;
     width: auto;
     animation: glow 0.75s infinite alternate;
   }
@@ -465,8 +481,8 @@ a {
 
   .characters {
     bottom: 0%;
-    height: 60%;
-    right: 1%;
+    height: 56%;
+    right: 6%;
   }
 
   .about {
@@ -517,7 +533,7 @@ a {
     transform: rotate(-11deg) skewX(-9deg) skewY(-5deg);
   }
 
-  .ebook {
+  .stacking {
     top: 41.5%;
     right: 29%;
     width: 23.5%;
@@ -565,7 +581,7 @@ a {
   }
 
   .paragraphSmall {
-    font-family: "Kanit", sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-size: 1rem;
     font-weight: 600;
     text-shadow: 2px 2px 2px black;
@@ -573,8 +589,8 @@ a {
   }
 
   a {
-    font-family: "Kanit", sans-serif;
-    font-family: "Kanit", sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
   }

@@ -1,19 +1,16 @@
 const aboutSection = document.getElementById("aboutSection");
 const utilitiesSection = document.getElementById("utilitiesSection");
 const teamSection = document.getElementById("teamSection");
-const atoopiaSection = document.getElementById("atoopiaSection");
 const ebookSection = document.getElementById("ebookSection");
 const faqSection = document.getElementById("faqSection");
 const homeSection = document.getElementById("homeSection");
-const connectSection = document.getElementById("connectSection");
+const comingSoonSection = document.getElementById("comingSoonSection");
 const homeBtn = document.getElementById("homebtn");
 const sectionList = [
   homeSection,
   aboutSection,
   teamSection,
-  atoopiaSection,
-  ebookSection,
-  connectSection,
+  comingSoonSection,
   // utilitiesSection,
   faqSection,
 ];

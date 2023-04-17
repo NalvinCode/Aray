@@ -11,7 +11,7 @@ const sectionList = [
   aboutSection,
   teamSection,
   comingSoonSection,
-  // utilitiesSection,
+  utilitiesSection,
   faqSection,
 ];
 

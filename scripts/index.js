@@ -15,6 +15,17 @@ const sectionList = [
   faqSection,
 ];
 
+const closeModal = (modalId) => {
+  let modal = document.getElementById(modalId);
+  modal.classList.add("hidden");
+};
+
+const openModal = (modalId) => {
+  let modal = document.getElementById(modalId);
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+};
+
 const fade = (element, section) => {
   var op = 1;
   var timer = setInterval(function () {
@@ -31,7 +42,6 @@ const fade = (element, section) => {
         } else {
           homeBtn.classList.remove("hidden");
         }
-        console.log(e);
         e.classList.remove("hidden");
       });
       unfade(element);
@@ -57,4 +67,19 @@ const unfade = (element) => {
 
 const toSection = (section) => {
   fade(document.body, section);
+};
+
+const handleAcc = (index) => {
+  const accordion = document.getElementById(`${"acc" + index}`);
+  let icon1 = document.getElementById(`${"plus" + index}`);
+  let icon2 = document.getElementById(`${"minus" + index}`);
+  if (accordion.classList.contains("hidden")) {
+    accordion.classList.remove("hidden");
+    icon1.classList.add("hidden");
+    icon2.classList.remove("hidden");
+    return;
+  }
+  accordion.classList.add("hidden");
+  icon2.classList.add("hidden");
+  icon1.classList.remove("hidden");
 };

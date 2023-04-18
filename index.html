@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
       rel="stylesheet"
     />
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
     <title>Aray</title>
   </head>
   <body>
@@ -85,11 +85,12 @@
         id="aboutSection"
         class="hidden relative flex flex-col items-center bg-lightBlue"
       >
+      <h1 class="sectionHeader text-8xl mt-16">About</h1>
         <div
-          class="sectionContainer flex gap-20 px-60 py-20 z-30 text-center justify-center items-center"
+          class="sectionContainer flex gap-20 px-60 py-36 z-30 text-center justify-center items-center"
         >
-          <div class="relative flex flex-col gap-10 p-10 rounded-xl shadow-lg">
-            <h1 class="sectionHeader text-8xl mt-16">Our mission</h1>
+          <div class="flex flex-col gap-10 p-10 rounded-xl shadow-lg fadingBorder">
+            <h1 class="sectionHeaderSmall text-8xl mt-16">Our mission</h1>
             <p class="paragraph">
               Our main mission is to develop Atoopia. Atoopia is a web3 platform
               designed to connect clients in search of external services with
@@ -102,8 +103,8 @@
               their project.
             </p>
           </div>
-          <div class="flex flex-col gap-10 p-10 rounded-xl shadow-lg">
-            <h1 class="sectionHeader text-8xl mt-16">Our vision</h1>
+          <div class="flex flex-col gap-10 p-10 rounded-xl shadow-lg fadingBorder">
+            <h1 class="sectionHeaderSmall text-8xl mt-16">Our vision</h1>
             <p class="paragraph">
               Over the past ten years, the freelancing market has experienced
               explosive growth. Whether in the field of web2 or web3, more and
@@ -168,58 +169,69 @@
         >
           <h1 class="sectionHeader text-8xl mt-16">Utilities</h1>
           <div class="flex flex-col justify-center items-center gap-10">
-            <div class="flex gap-10 justify-center">            
-              <div class="relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fading-border">
-                <img src="public/sprites/Trait_NoBG_01.png" class="animate-wiggle" alt="">
+            <div class="flex itemContainer gap-10 justify-center">
+
+              <div class="itemCard relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fadingBorder">
+                <img src="public/traits/ArayCap_Trait1.png" class="animate-wiggle" alt="">
                 <h1 class="sectionHeaderSmall text-4xl">Staking</h1>
-                <!-- <div class="absolute flex justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2 fading-border">                  
+                <button type="button" class="showMore fadingBorder" onclick="openModal('modalItem1')"> <p class="fadingTextSmall">Show More</p> </button>
+                <div id="modalItem1" class="itemModal hidden absolute flex-col gap-5 justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2 ">                  
                   <p class="paragraphSmall">
                     Stake your NFT
                   </p>
-                </div> -->
-              </div>
-
-              <div class="relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fading-border">
-                <img src="public/sprites/Trait_NoBG_01.png" class="animate-wiggle" alt="">
-                <h1 class="sectionHeaderSmall text-4xl">Atoopia Store</h1>
-                <div class="absolute flex justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2">                  
-                  <p class="paragraphSmall">
-                    Spend your $ATP earned by staking your NFTs in various products or benefits.
-                  </p>
+                 <button type="button" class="showMore fadingBorder" onclick="closeModal('modalItem1')"> <p class="fadingTextSmall">Close</p> </button>
                 </div>
               </div>
 
-              <div class="relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fading-border">
-                <img src="public/sprites/Trait_NoBG_01.png" class="animate-wiggle" alt="">
+              <div class="itemCard relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fadingBorder">
+                <img src="public/traits/BlueHat_Trait1.png" class="animate-wiggle" alt="">
+                <h1 class="sectionHeaderSmall text-4xl">Atoopia Store</h1>
+                <button type="button" class="showMore fadingBorder" onclick="openModal('modalItem2')"> <p class="fadingTextSmall">Show More</p> </button>
+                <div id="modalItem2" class="itemModal hidden absolute flex-col gap-5 justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2 ">                        
+                  <p class="paragraphSmall">
+                    Spend your $ATP earned by staking your NFTs in various products or benefits.
+                  </p>
+                 <button type="button" class="showMore fadingBorder" onclick="closeModal('modalItem2')"> <p class="fadingTextSmall">Close</p> </button>
+                </div>
+              </div>
+
+              <div class="itemCard relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fadingBorder">
+                <img src="public/traits/Headphones_Trait1.png" class="animate-wiggle" alt="">
                 <h1 class="sectionHeaderSmall text-4xl">Atoopia Market</h1>
-                <div class="absolute flex justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2">                  
+                <button type="button" class="showMore fadingBorder" onclick="openModal('modalItem3')"> <p class="fadingTextSmall">Show More</p> </button>
+                <div id="modalItem3" class="itemModal hidden absolute flex-col gap-5 justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2 ">                        
                   <p class="paragraphSmall">
                     Advertising panel on our website to promote researchers and job seekers.
                   </p>
+                 <button type="button" class="showMore fadingBorder" onclick="closeModal('modalItem3')"> <p class="fadingTextSmall">Close</p> </button>
                 </div>
               </div>
 
             </div>
 
-            <div class="flex gap-10 justify-center">
+            <div class="itemContainer flex gap-10 justify-center">
 
-              <div class="relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fading-border">
-                <img src="public/sprites/Trait_NoBG_01.png" class="animate-wiggle" alt="">
+              <div class="itemCard relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fadingBorder">
+                <img src="public/traits/GasMask_Trait1.png" class="animate-wiggle" alt="">
                 <h1 class="sectionHeaderSmall text-4xl">Atoopia Studio</h1>
-                <div class="absolute flex justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2">                  
+                <button type="button" class="showMore fadingBorder" onclick="openModal('modalItem4')"> <p class="fadingTextSmall">Show More</p> </button>
+                <div id="modalItem4" class="itemModal hidden absolute flex-col gap-5 justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2 ">                        
                   <p class="paragraphSmall">
                     Community place for creators and designers, help the community, create a movement, be an atoopian.
                   </p>
+                 <button type="button" class="showMore fadingBorder" onclick="closeModal('modalItem4')"> <p class="fadingTextSmall">Close</p> </button>
                 </div>
               </div>
 
-              <div class="relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fading-border">
-                <img src="public/sprites/Trait_NoBG_01.png" class="animate-wiggle" alt="">
+              <div class="itemCard relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fadingBorder">
+                <img src="public/traits/VirtualReality_Trait1.png" class="animate-wiggle" alt="">
                 <h1 class="sectionHeaderSmall text-4xl">Atoopia platform</h1>
-                <div class="absolute flex justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2">                  
+                <button type="button" class="showMore fadingBorder" onclick="openModal('modalItem5')"> <p class="fadingTextSmall">Show More</p> </button>
+                <div id="modalItem5" class="itemModal hidden absolute flex-col gap-5 justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2 ">                   
                   <p class="paragraphSmall">
                     Atoopia is an innovative web3 platform that was created to meet the specific needs of the web3 community, whether they are freelancers or businesses. With its intuitive interface and advanced features, Atoopia provides an exceptional user experience.
                   </p>
+                  <button type="button" class="showMore fadingBorder" onclick="closeModal('modalItem5')"> <p class="fadingTextSmall">Close</p> </button>
                 </div>
               </div>
 
@@ -272,13 +284,14 @@
 
       <section
         id="teamSection"
-        class="hidden relative flex flex-col items-center bg-lightBlue"
+        class="hidden relative flex flex-col items-center bg-lightBlue "
       >
         <div
-          class="sectionContainer flex flex-col gap-20 p-10 z-30 text-center justify-center items-center overflow-auto"
+          class="sectionContainer flex flex-col gap-20 p-10 py-20 pb-20 z-30 text-center justify-center items-center overflow-auto"
         >
+        <h1 class="sectionHeader text-8xl mt-16">Team</h1>
           <div
-            class="teamCard relative flex flex-col justify-center items-center gap-10 p-10 rounded-xl shadow-lg"
+            class="teamCard relative flex flex-col justify-center items-center gap-10 p-10 rounded-xl shadow-lg fadingBorder"
           >
             <h1 class="sectionHeaderSmall text-6xl mt-16">Peaky</h1>
             <h1 class="sectionHeaderSmall text-4xl">Founder of ARAY</h1>
@@ -313,7 +326,7 @@
           </div>
 
           <div
-            class="teamCard relative flex flex-col justify-center items-center gap-10 p-10 rounded-xl shadow-lg"
+            class="teamCard relative flex flex-col justify-center items-center gap-10 p-10 rounded-xl shadow-lg fadingBorder"
           >
             <h1 class="sectionHeaderSmall text-6xl mt-16">Zzodiaak</h1>
             <h1 class="sectionHeaderSmall text-4xl">Co founder</h1>
@@ -344,7 +357,7 @@
           </div>
 
           <div
-            class="teamCard relative flex flex-col justify-center items-center gap-10 p-10 rounded-xl shadow-lg"
+            class="teamCard relative flex flex-col justify-center items-center gap-10 p-10 rounded-xl shadow-lg fadingBorder"
           >
             <h1 class="sectionHeaderSmall text-6xl mt-16">Peceto</h1>
             <h1 class="sectionHeaderSmall text-4xl">Artist and designer</h1>
@@ -427,46 +440,52 @@
 
       <section
         id="faqSection"
-        class="hidden relative flex flex-col justify-center items-center bg-lightBlue h-screen px-10"
+        class="hidden relative flex flex-col justify-center items-center bg-lightBlue px-10 h-screen"
       >
-      <div class="sectionContainer flex flex-col gap-20 px-60 py-20 z-30 text-center justify-center items-center">
+      <div class="sectionContainer flex flex-col gap-20 px-60 py-20 z-30 text-center justify-center items-center h-full">
         <h1 class="sectionHeader text-8xl mt-16">FAQ</h1>
-        <div id="accordion-collapse" data-accordion="collapse" class="z-50">
-          <h2 id="accordion-collapse-heading-1">
-            <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
-              <span>What is the date of mint?</span>
-              <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </button>
-          </h2>
-          <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
-            <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-              <p class="mb-2 text-gray-500 dark:text-gray-400">-TBA</p>
-            </div>
+        <div class="z-50 accordion fadingBorder flex flex-col gap-5 p-10">
+          <div class="relative fadingBorder cursor-pointer flex justify-center items-center" onclick="handleAcc('1')">
+            <i id="plus1" class="fa-solid fa-plus fa-xl absolute left-2"></i>
+            <i id="minus1" class="hidden fa-solid fa-minus fa-xl absolute left-2"></i>
+            <h1 class="paragraph text-8xl ml-10">What is the date of mint?</h1>
           </div>
-          <h2 id="accordion-collapse-heading-2">
-            <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
-              <span>How much does mint cost?</span>
-              <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </button>
-          </h2>
-          <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
-            <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-              <p class="mb-2 text-gray-500 dark:text-gray-400">-TBA</p>
-            </div>
+          <div id="acc1" class="hidden transition ease-in-out">
+            <p class="paragraphSmall">
+              -TBA
+            </p>
           </div>
-          <h2 id="accordion-collapse-heading-3">
-            <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
-              <span>Supply?</span>
-              <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </button>
-          </h2>
-          <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
-            <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-              <p class="mb-2 text-gray-500 dark:text-gray-400">3000</p>
-            </div>
+          <div class="relative fadingBorder cursor-pointer flex justify-center items-center" onclick="handleAcc('2')">
+            <i id="plus2" class="fa-solid fa-plus fa-xl absolute left-2"></i>
+            <i id="minus2" class="hidden fa-solid fa-minus fa-xl absolute left-2"></i>
+            <h1 class="paragraph text-8xl ml-10">How much does mint cost?</h1>
+          </div>
+          <div id="acc2" class="hidden transition ease-in-out">
+            <p class="paragraphSmall">
+              -TBA
+            </p>
+          </div>
+          <div class="relative fadingBorder cursor-pointer flex justify-center items-center" onclick="handleAcc('3')">
+            <i id="plus3" class="fa-solid fa-plus fa-xl absolute left-2"></i>
+            <i id="minus3" class="hidden fa-solid fa-minus fa-xl absolute left-2"></i>
+            <h1 class="paragraph text-8xl ml-10">Supply?</h1>
+          </div>
+          <div id="acc3" class="hidden transition ease-in-out">
+            <p class="paragraphSmall">
+              -3,000
+            </p>
+          </div>
+          <div class="relative fadingBorder cursor-pointer flex justify-center items-center" onclick="handleAcc('4')">
+            <i id="plus4" class="fa-solid fa-plus fa-xl absolute left-2"></i>
+            <i id="minus4" class="hidden fa-solid fa-minus fa-xl absolute left-2"></i>
+            <h1 class="paragraph text-8xl ml-10">How to get the WL - OG - VIP roles?</h1>
+          </div>
+          <div id="acc4" class="hidden transition ease-in-out">
+            <p class="paragraphSmall">
+              -There are many different ways to get these roles: participation on our discord, participation in the games and events we regularly organize, collaborations and giveaways. Stay tuned.
+            </p>
           </div>
         </div>
-
         <div
             class="background-wrap flex flex-col items-start justify-around absolute w-full h-5/6 z-10"
           >

@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 
 @font-face {
   font-family: badSignal;
-  src: url('../fonts/badSignal.ttf');
+  src: url("../fonts/badSignal.ttf");
 }
 
 html,
@@ -37,7 +37,7 @@ body::-webkit-scrollbar {
 }
 
 .background-home {
-  background-image: url('../public/desktop/Web04_COMPUTER_BG\ ONLY.png');
+  background-image: url("../public/desktop/Web04_COMPUTER_BG\ ONLY.png");
   background-size: cover;
   position: relative;
   aspect-ratio: 16/9;
@@ -88,7 +88,7 @@ body::-webkit-scrollbar {
 }
 
 .paragraph {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 1.7rem;
   font-weight: 600;
   text-shadow: 2px 2px 2px black;
@@ -96,7 +96,7 @@ body::-webkit-scrollbar {
 }
 
 .paragraphSmall {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
   text-shadow: 2px 2px 2px black;
@@ -104,8 +104,16 @@ body::-webkit-scrollbar {
 }
 
 .fadingText {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 2.5rem;
+  text-shadow: 2px 2px 2px black;
+  font-weight: 600;
+  color: rgb(240, 72, 206);
+  animation: interference 5s infinite;
+}
+.fadingTextSmall {
+  font-family: "Kanit", sans-serif;
+  font-size: 1rem;
   text-shadow: 2px 2px 2px black;
   font-weight: 600;
   color: rgb(240, 72, 206);
@@ -113,8 +121,8 @@ body::-webkit-scrollbar {
 }
 
 a {
-  font-family: 'Kanit', sans-serif;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -184,6 +192,10 @@ a {
   transform: rotate(-11deg) skewX(-9deg) skewY(-5deg);
 }
 
+.showMore {
+  cursor: pointer;
+}
+
 .stacking {
   top: 35%;
   right: 15.3%;
@@ -226,7 +238,16 @@ a {
 }
 
 .fadingBorder {
-  animation: fading-border 10s linear infinite;
+  animation: fadingBorder 10s linear infinite;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+.fadingBorderAbout {
+  animation: fadingBorder 10s linear infinite;
+}
+
+.accordion-content {
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
 }
 
 @keyframes fall {
@@ -375,29 +396,29 @@ a {
   }
 }
 
-@keyframes fading-border {
+@keyframes fadingBorder {
   0% {
-    border: 10px solid #000;
+    border: 2.5px solid rgb(240, 72, 206);
   }
 
   20% {
-    border: 10px solid #000;
+    border: 2.5px solid rgb(72, 142, 240);
   }
 
   40% {
-    border: 10px solid #000;
+    border: 2.5px solid rgb(72, 240, 86);
   }
 
   60% {
-    border: 10px solid #000;
+    border: 2.5px solid rgb(240, 237, 72);
   }
 
   80% {
-    border: 10px solid #000;
+    border: 2.5px solid rgb(240, 72, 72);
   }
 
   100% {
-    border: 10px solid #000;
+    border: 2.5px solid rgb(72, 234, 240);
   }
 }
 @keyframes fadingBg {
@@ -482,7 +503,7 @@ a {
     overflow: auto;
   }
   .background-home {
-    background-image: url('../public/mobile/Web04_MOBILE_BG\ ONLY.png');
+    background-image: url("../public/mobile/Web04_MOBILE_BG\ ONLY.png");
     background-size: cover;
     position: relative;
     aspect-ratio: 9/16;
@@ -563,6 +584,16 @@ a {
     transform: rotate(-11deg) skewX(-9deg) skewY(-5deg);
   }
 
+  .itemContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .itemCard {
+    width: 50%;
+  }
+
   .stacking {
     top: 41.5%;
     right: 29%;
@@ -611,16 +642,16 @@ a {
   }
 
   .paragraphSmall {
-    font-family: 'Kanit', sans-serif;
-    font-size: 1rem;
+    font-family: "Kanit", sans-serif;
+    font-size: 0.7rem;
     font-weight: 600;
     text-shadow: 2px 2px 2px black;
     color: rgb(255, 255, 255);
   }
 
   a {
-    font-family: 'Kanit', sans-serif;
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
+    font-family: "Kanit", sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
   }

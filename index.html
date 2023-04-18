@@ -15,7 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <title>Aray</title>
   </head>
   <body>
@@ -47,49 +50,60 @@
           alt=""
         />
 
-        <a onclick="toSection('aboutSection')"
-          ><button class="absolute window about z-10"></button
-        ></a>
+        <button
+          class="absolute window about z-10 cursor-pointer"
+          onclick="toSection('aboutSection')"
+        ></button>
         <a href="https://aray-whitepaper.gitbook.io/aray/" target="_blank"
-          ><button class="absolute window litePaper z-10"></button
+          ><button
+            class="absolute window litePaper z-10 cursor-pointer"
+          ></button
         ></a>
-        <a onclick="toSection('utilitiesSection')"
-          ><button class="absolute window utilities z-10"></button
-        ></a>
-        <a onclick="toSection('teamSection')"
-          ><button class="absolute window team z-10"></button
-        ></a>
-        <a onclick="toSection('comingSoonSection')"
-          ><button class="absolute window atoopia z-10"></button
-        ></a>
-        <a onclick="toSection('comingSoonSection')"
-          ><button class="absolute window stacking z-10"></button
-        ></a>
-        <a onclick="toSection('faqSection')"
-          ><button class="absolute window faq z-10"></button
-        ></a>
-        <a onclick="toSection('comingSoonSection')"
-          ><button class="absolute window connect z-10"></button
-        ></a>
-        ></a>
-        <a onclick="toSection('comingSoonSection')"
-          ><button class="absolute window store z-10"></button
-        ></a>
-        ></a>
-        <a onclick="toSection('comingSoonSection')"
-          ><button class="absolute window market z-10"></button
-        ></a>
+        <button
+          class="absolute window utilities z-10"
+          onclick="toSection('utilitiesSection')"
+        ></button>
+        <button
+          class="absolute window team z-10"
+          onclick="toSection('teamSection')"
+        ></button>
+        <button
+          class="absolute window atoopia z-10"
+          onclick="toSection('atoopiaSection')"
+        ></button>
+        <button
+          class="absolute window stacking z-10"
+          onclick="toSection('comingSoonSection')"
+        ></button>
+        <button
+          class="absolute window faq z-10"
+          onclick="toSection('faqSection')"
+        ></button>
+        <button
+          class="absolute window connect z-10"
+          onclick="toSection('comingSoonSection')"
+        ></button>
+        <button
+          class="absolute window store z-10"
+          onclick="toSection('comingSoonSection')"
+        ></button>
+        <button
+          class="absolute window market z-10"
+          onclick="toSection('comingSoonSection')"
+        ></button>
       </section>
 
       <section
         id="aboutSection"
         class="hidden relative flex flex-col items-center bg-lightBlue"
       >
-      <h1 class="sectionHeader text-8xl mt-16">About</h1>
+        <h1 class="sectionHeader text-8xl mt-16">About</h1>
         <div
           class="sectionContainer flex gap-20 px-60 py-36 z-30 text-center justify-center items-center"
         >
-          <div class="flex flex-col gap-10 p-10 rounded-xl shadow-lg fadingBorder">
+          <div
+            class="flex flex-col gap-10 p-10 rounded-xl shadow-lg fadingBorder"
+          >
             <h1 class="sectionHeaderSmall text-8xl mt-16">Our mission</h1>
             <p class="paragraph">
               Our main mission is to develop Atoopia. Atoopia is a web3 platform
@@ -103,7 +117,9 @@
               their project.
             </p>
           </div>
-          <div class="flex flex-col gap-10 p-10 rounded-xl shadow-lg fadingBorder">
+          <div
+            class="flex flex-col gap-10 p-10 rounded-xl shadow-lg fadingBorder"
+          >
             <h1 class="sectionHeaderSmall text-8xl mt-16">Our vision</h1>
             <p class="paragraph">
               Over the past ten years, the freelancing market has experienced
@@ -159,7 +175,6 @@
         </div>
       </section>
 
-
       <section
         id="utilitiesSection"
         class="hidden relative flex flex-col items-center bg-lightBlue"
@@ -170,75 +185,180 @@
           <h1 class="sectionHeader text-8xl mt-16">Utilities</h1>
           <div class="flex flex-col justify-center items-center gap-10">
             <div class="flex itemContainer gap-10 justify-center">
-
-              <div class="itemCard relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fadingBorder">
-                <img src="public/traits/ArayCap_Trait1.png" class="animate-wiggle" alt="">
+              <div
+                class="itemCard relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fadingBorder"
+              >
+                <img
+                  src="public/traits/ArayCap_Trait1.png"
+                  class="animate-wiggle"
+                  alt=""
+                />
                 <h1 class="sectionHeaderSmall text-4xl">Staking</h1>
-                <button type="button" class="showMore fadingBorder" onclick="openModal('modalItem1')"> <p class="fadingTextSmall">Show More</p> </button>
-                <div id="modalItem1" class="itemModal hidden absolute flex-col gap-5 justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2 ">                  
-                  <p class="paragraphSmall">
-                    Stake your NFT
-                  </p>
-                 <button type="button" class="showMore fadingBorder" onclick="closeModal('modalItem1')"> <p class="fadingTextSmall">Close</p> </button>
+                <button
+                  type="button"
+                  class="showMore fadingBorder"
+                  onclick="openModal('modalItem1')"
+                >
+                  <p class="fadingTextSmall">Show More</p>
+                </button>
+                <div
+                  id="modalItem1"
+                  class="itemModal hidden absolute flex-col gap-5 justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2"
+                >
+                  <p class="paragraphSmall">Stake your NFT</p>
+                  <button
+                    type="button"
+                    class="showMore fadingBorder"
+                    onclick="closeModal('modalItem1')"
+                  >
+                    <p class="fadingTextSmall">Close</p>
+                  </button>
                 </div>
               </div>
 
-              <div class="itemCard relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fadingBorder">
-                <img src="public/traits/BlueHat_Trait1.png" class="animate-wiggle" alt="">
+              <div
+                class="itemCard relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fadingBorder"
+              >
+                <img
+                  src="public/traits/BlueHat_Trait1.png"
+                  class="animate-wiggle"
+                  alt=""
+                />
                 <h1 class="sectionHeaderSmall text-4xl">Atoopia Store</h1>
-                <button type="button" class="showMore fadingBorder" onclick="openModal('modalItem2')"> <p class="fadingTextSmall">Show More</p> </button>
-                <div id="modalItem2" class="itemModal hidden absolute flex-col gap-5 justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2 ">                        
+                <button
+                  type="button"
+                  class="showMore fadingBorder"
+                  onclick="openModal('modalItem2')"
+                >
+                  <p class="fadingTextSmall">Show More</p>
+                </button>
+                <div
+                  id="modalItem2"
+                  class="itemModal hidden absolute flex-col gap-5 justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2"
+                >
                   <p class="paragraphSmall">
-                    Spend your $ATP earned by staking your NFTs in various products or benefits.
+                    Spend your $ATP earned by staking your NFTs in various
+                    products or benefits.
                   </p>
-                 <button type="button" class="showMore fadingBorder" onclick="closeModal('modalItem2')"> <p class="fadingTextSmall">Close</p> </button>
+                  <button
+                    type="button"
+                    class="showMore fadingBorder"
+                    onclick="closeModal('modalItem2')"
+                  >
+                    <p class="fadingTextSmall">Close</p>
+                  </button>
                 </div>
               </div>
 
-              <div class="itemCard relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fadingBorder">
-                <img src="public/traits/Headphones_Trait1.png" class="animate-wiggle" alt="">
+              <div
+                class="itemCard relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fadingBorder"
+              >
+                <img
+                  src="public/traits/Headphones_Trait1.png"
+                  class="animate-wiggle"
+                  alt=""
+                />
                 <h1 class="sectionHeaderSmall text-4xl">Atoopia Market</h1>
-                <button type="button" class="showMore fadingBorder" onclick="openModal('modalItem3')"> <p class="fadingTextSmall">Show More</p> </button>
-                <div id="modalItem3" class="itemModal hidden absolute flex-col gap-5 justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2 ">                        
+                <button
+                  type="button"
+                  class="showMore fadingBorder"
+                  onclick="openModal('modalItem3')"
+                >
+                  <p class="fadingTextSmall">Show More</p>
+                </button>
+                <div
+                  id="modalItem3"
+                  class="itemModal hidden absolute flex-col gap-5 justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2"
+                >
                   <p class="paragraphSmall">
-                    Advertising panel on our website to promote researchers and job seekers.
+                    Advertising panel on our website to promote researchers and
+                    job seekers.
                   </p>
-                 <button type="button" class="showMore fadingBorder" onclick="closeModal('modalItem3')"> <p class="fadingTextSmall">Close</p> </button>
+                  <button
+                    type="button"
+                    class="showMore fadingBorder"
+                    onclick="closeModal('modalItem3')"
+                  >
+                    <p class="fadingTextSmall">Close</p>
+                  </button>
                 </div>
               </div>
-
             </div>
 
             <div class="itemContainer flex gap-10 justify-center">
-
-              <div class="itemCard relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fadingBorder">
-                <img src="public/traits/GasMask_Trait1.png" class="animate-wiggle" alt="">
+              <div
+                class="itemCard relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fadingBorder"
+              >
+                <img
+                  src="public/traits/GasMask_Trait1.png"
+                  class="animate-wiggle"
+                  alt=""
+                />
                 <h1 class="sectionHeaderSmall text-4xl">Atoopia Studio</h1>
-                <button type="button" class="showMore fadingBorder" onclick="openModal('modalItem4')"> <p class="fadingTextSmall">Show More</p> </button>
-                <div id="modalItem4" class="itemModal hidden absolute flex-col gap-5 justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2 ">                        
+                <button
+                  type="button"
+                  class="showMore fadingBorder"
+                  onclick="openModal('modalItem4')"
+                >
+                  <p class="fadingTextSmall">Show More</p>
+                </button>
+                <div
+                  id="modalItem4"
+                  class="itemModal hidden absolute flex-col gap-5 justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2"
+                >
                   <p class="paragraphSmall">
-                    Community place for creators and designers, help the community, create a movement, be an atoopian.
+                    Community place for creators and designers, help the
+                    community, create a movement, be an atoopian.
                   </p>
-                 <button type="button" class="showMore fadingBorder" onclick="closeModal('modalItem4')"> <p class="fadingTextSmall">Close</p> </button>
+                  <button
+                    type="button"
+                    class="showMore fadingBorder"
+                    onclick="closeModal('modalItem4')"
+                  >
+                    <p class="fadingTextSmall">Close</p>
+                  </button>
                 </div>
               </div>
 
-              <div class="itemCard relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fadingBorder">
-                <img src="public/traits/VirtualReality_Trait1.png" class="animate-wiggle" alt="">
+              <div
+                class="itemCard relative flex flex-col gap-10 rounded-xl shadow-lg w-35% justify-center items-center p-5 fadingBorder"
+              >
+                <img
+                  src="public/traits/VirtualReality_Trait1.png"
+                  class="animate-wiggle"
+                  alt=""
+                />
                 <h1 class="sectionHeaderSmall text-4xl">Atoopia platform</h1>
-                <button type="button" class="showMore fadingBorder" onclick="openModal('modalItem5')"> <p class="fadingTextSmall">Show More</p> </button>
-                <div id="modalItem5" class="itemModal hidden absolute flex-col gap-5 justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2 ">                   
+                <button
+                  type="button"
+                  class="showMore fadingBorder"
+                  onclick="openModal('modalItem5')"
+                >
+                  <p class="fadingTextSmall">Show More</p>
+                </button>
+                <div
+                  id="modalItem5"
+                  class="itemModal hidden absolute flex-col gap-5 justify-center items-center h-full w-full bg-lightBlack rounded-2xl p-2"
+                >
                   <p class="paragraphSmall">
-                    Atoopia is an innovative web3 platform that was created to meet the specific needs of the web3 community, whether they are freelancers or businesses. With its intuitive interface and advanced features, Atoopia provides an exceptional user experience.
+                    Atoopia is an innovative web3 platform that was created to
+                    meet the specific needs of the web3 community, whether they
+                    are freelancers or businesses. With its intuitive interface
+                    and advanced features, Atoopia provides an exceptional user
+                    experience.
                   </p>
-                  <button type="button" class="showMore fadingBorder" onclick="closeModal('modalItem5')"> <p class="fadingTextSmall">Close</p> </button>
+                  <button
+                    type="button"
+                    class="showMore fadingBorder"
+                    onclick="closeModal('modalItem5')"
+                  >
+                    <p class="fadingTextSmall">Close</p>
+                  </button>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
-
 
         <img
           class="absolute bush h-15% top-0 right-0 z-20"
@@ -284,12 +404,12 @@
 
       <section
         id="teamSection"
-        class="hidden relative flex flex-col items-center bg-lightBlue "
+        class="hidden relative flex flex-col items-center bg-lightBlue"
       >
         <div
           class="sectionContainer flex flex-col gap-20 p-10 py-20 pb-20 z-30 text-center justify-center items-center overflow-auto"
         >
-        <h1 class="sectionHeader text-8xl mt-16">Team</h1>
+          <h1 class="sectionHeader text-8xl mt-16">Team</h1>
           <div
             class="teamCard relative flex flex-col justify-center items-center gap-10 p-10 rounded-xl shadow-lg fadingBorder"
           >
@@ -437,56 +557,81 @@
         </div>
       </section>
 
-
       <section
         id="faqSection"
         class="hidden relative flex flex-col justify-center items-center bg-lightBlue px-10 h-screen"
       >
-      <div class="sectionContainer flex flex-col gap-20 px-60 py-20 z-30 text-center justify-center items-center h-full">
-        <h1 class="sectionHeader text-8xl mt-16">FAQ</h1>
-        <div class="z-50 accordion fadingBorder flex flex-col gap-5 p-10">
-          <div class="relative fadingBorder cursor-pointer flex justify-center items-center" onclick="handleAcc('1')">
-            <i id="plus1" class="fa-solid fa-plus fa-xl absolute left-2"></i>
-            <i id="minus1" class="hidden fa-solid fa-minus fa-xl absolute left-2"></i>
-            <h1 class="paragraph text-8xl ml-10">What is the date of mint?</h1>
-          </div>
-          <div id="acc1" class="hidden transition ease-in-out">
-            <p class="paragraphSmall">
-              -TBA
-            </p>
-          </div>
-          <div class="relative fadingBorder cursor-pointer flex justify-center items-center" onclick="handleAcc('2')">
-            <i id="plus2" class="fa-solid fa-plus fa-xl absolute left-2"></i>
-            <i id="minus2" class="hidden fa-solid fa-minus fa-xl absolute left-2"></i>
-            <h1 class="paragraph text-8xl ml-10">How much does mint cost?</h1>
-          </div>
-          <div id="acc2" class="hidden transition ease-in-out">
-            <p class="paragraphSmall">
-              -TBA
-            </p>
-          </div>
-          <div class="relative fadingBorder cursor-pointer flex justify-center items-center" onclick="handleAcc('3')">
-            <i id="plus3" class="fa-solid fa-plus fa-xl absolute left-2"></i>
-            <i id="minus3" class="hidden fa-solid fa-minus fa-xl absolute left-2"></i>
-            <h1 class="paragraph text-8xl ml-10">Supply?</h1>
-          </div>
-          <div id="acc3" class="hidden transition ease-in-out">
-            <p class="paragraphSmall">
-              -3,000
-            </p>
-          </div>
-          <div class="relative fadingBorder cursor-pointer flex justify-center items-center" onclick="handleAcc('4')">
-            <i id="plus4" class="fa-solid fa-plus fa-xl absolute left-2"></i>
-            <i id="minus4" class="hidden fa-solid fa-minus fa-xl absolute left-2"></i>
-            <h1 class="paragraph text-8xl ml-10">How to get the WL - OG - VIP roles?</h1>
-          </div>
-          <div id="acc4" class="hidden transition ease-in-out">
-            <p class="paragraphSmall">
-              -There are many different ways to get these roles: participation on our discord, participation in the games and events we regularly organize, collaborations and giveaways. Stay tuned.
-            </p>
-          </div>
-        </div>
         <div
+          class="sectionContainer flex flex-col gap-20 px-60 py-20 z-30 text-center justify-center items-center h-full"
+        >
+          <h1 class="sectionHeader text-8xl mt-16">FAQ</h1>
+          <div class="z-50 accordion fadingBorder flex flex-col gap-5 p-10">
+            <div
+              class="relative fadingBorder cursor-pointer flex justify-center items-center"
+              onclick="handleAcc('1')"
+            >
+              <i id="plus1" class="fa-solid fa-plus fa-xl absolute left-2"></i>
+              <i
+                id="minus1"
+                class="hidden fa-solid fa-minus fa-xl absolute left-2"
+              ></i>
+              <h1 class="paragraph text-8xl ml-10">
+                What is the date of mint?
+              </h1>
+            </div>
+            <div id="acc1" class="hidden transition ease-in-out">
+              <p class="paragraphSmall">-TBA</p>
+            </div>
+            <div
+              class="relative fadingBorder cursor-pointer flex justify-center items-center"
+              onclick="handleAcc('2')"
+            >
+              <i id="plus2" class="fa-solid fa-plus fa-xl absolute left-2"></i>
+              <i
+                id="minus2"
+                class="hidden fa-solid fa-minus fa-xl absolute left-2"
+              ></i>
+              <h1 class="paragraph text-8xl ml-10">How much does mint cost?</h1>
+            </div>
+            <div id="acc2" class="hidden transition ease-in-out">
+              <p class="paragraphSmall">-TBA</p>
+            </div>
+            <div
+              class="relative fadingBorder cursor-pointer flex justify-center items-center"
+              onclick="handleAcc('3')"
+            >
+              <i id="plus3" class="fa-solid fa-plus fa-xl absolute left-2"></i>
+              <i
+                id="minus3"
+                class="hidden fa-solid fa-minus fa-xl absolute left-2"
+              ></i>
+              <h1 class="paragraph text-8xl ml-10">Supply?</h1>
+            </div>
+            <div id="acc3" class="hidden transition ease-in-out">
+              <p class="paragraphSmall">-3,000</p>
+            </div>
+            <div
+              class="relative fadingBorder cursor-pointer flex justify-center items-center"
+              onclick="handleAcc('4')"
+            >
+              <i id="plus4" class="fa-solid fa-plus fa-xl absolute left-2"></i>
+              <i
+                id="minus4"
+                class="hidden fa-solid fa-minus fa-xl absolute left-2"
+              ></i>
+              <h1 class="paragraph text-8xl ml-10">
+                How to get the WL - OG - VIP roles?
+              </h1>
+            </div>
+            <div id="acc4" class="hidden transition ease-in-out">
+              <p class="paragraphSmall">
+                -There are many different ways to get these roles: participation
+                on our discord, participation in the games and events we
+                regularly organize, collaborations and giveaways. Stay tuned.
+              </p>
+            </div>
+          </div>
+          <div
             class="background-wrap flex flex-col items-start justify-around absolute w-full h-5/6 z-10"
           >
             <img

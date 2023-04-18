@@ -944,15 +944,6 @@ input[type="range"]::-ms-fill-lower {
   width: 100%;
 }
 
-.max-w-full {
-  max-width: 100%;
-}
-
-.max-w-fit {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-
 @keyframes wiggle {
   0%, 100% {
     transform: rotate(-3deg);
